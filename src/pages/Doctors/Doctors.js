@@ -12,8 +12,8 @@ const Doctors = () => {
         <>
             <h2 className="text-center text-lg font-semibold text-blue-300 mt-8">MEET OUR EXPERIENTS DOCTORS</h2>
             <h3 className="text-center text-3xl font-semibold text-blue-500 mb-16">We Are Experts In Our Field</h3>
-            <div className="grid grid-cols-3 gap-8 mx-12">
-                <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
+            <div className="lg:grid lg:grid-cols-3 gap-8 mx-12">
+                <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0 mb-4">
                     <img className="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src={doctor1} alt="" width="384" height="512" />
                     <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                         <figcaption>
@@ -28,7 +28,7 @@ const Doctors = () => {
                         </figcaption>
                     </div>
                 </figure>
-                <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
+                <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0 mb-4">
                     <img className="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src={doctor2} alt="" width="384" height="512" />
                     <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                         <figcaption className="font-medium">
@@ -43,7 +43,7 @@ const Doctors = () => {
                         </figcaption>
                     </div>
                 </figure>
-                <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
+                <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0 mb-4">
                     <img className="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src={doctor3} alt="" width="384" height="512" />
                     <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                         <figcaption className="font-medium">
@@ -58,7 +58,7 @@ const Doctors = () => {
                         </figcaption>
                     </div>
                 </figure>
-                <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
+                <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0 mb-4">
                     <img className="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src={doctor4} alt="" width="384" height="512" />
                     <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                         <figcaption className="font-medium">
@@ -73,7 +73,7 @@ const Doctors = () => {
                         </figcaption>
                     </div>
                 </figure>
-                <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
+                <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0 mb-4">
                     <img className="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src={doctor5} alt="" width="384" height="512" />
                     <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                         <figcaption className="font-medium">
@@ -88,7 +88,7 @@ const Doctors = () => {
                         </figcaption>
                     </div>
                 </figure>
-                <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
+                <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0 mb-4">
                     <img className="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src={doctor6} alt="" width="384" height="512" />
                     <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                         <figcaption className="font-medium">

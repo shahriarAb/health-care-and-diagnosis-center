@@ -15,21 +15,21 @@ const Aboutus = () => {
                         <p className="text-lg ml-4 text-gray-600"><i>"We have 20 years of successfull experience. We always try to give the best service from the beginning</i></p>
                     </div>
                 </div>
-                <div className="lg:flex ml-10 mt-2">
+                <div className="lg:flex lg:ml-10 mt-2">
                     <h1 className="text-blue-900 text-7xl font-bold"><i>2</i></h1>
                     <div className="mt-4 ml-8">
                         <h4 className="text-blue-700 text-xl font-semibold">We have experienced Doctor's</h4>
                         <p className="text-lg ml-4 text-gray-600"><i>"We give you the experienced and well trained Doctors. Doctors are very helpfull and always try to motivate patient.</i></p>
                     </div>
                 </div>
-                <div className="lg:flex ml-20 mt-2">
+                <div className="lg:flex lg:ml-20 mt-2">
                     <h1 className="text-blue-900 text-7xl font-bold"><i>3</i></h1>
                     <div className="mt-4 ml-8">
                         <h4 className="text-blue-700 text-xl font-semibold">We are improving everyday</h4>
                         <p className="text-lg ml-4 text-gray-600"><i>"From the beginning we improves our services day by day. You are always welcome to give your all important opinion and elp us to improve more. Feel always free to let us know. Go to feedback hub on <Link to="/home"></Link> and give your counsel.</i></p>
                     </div>
                 </div>
-                <div className="lg:flex ml-32">
+                <div className="lg:flex lg:ml-32">
                     <h1 className="text-blue-900 text-7xl font-bold"><i>4</i></h1>
                     <div className="mt-4 ml-8">
                         <h4 className="text-blue-700 text-xl font-semibold">Accurate Lab Results</h4>
@@ -49,35 +49,35 @@ const Aboutus = () => {
                     </div>
                 </div>
                 <div className="lg:flex service-icon">
-                    <div className="text-6xl text-blue-800"><i class="fas fa-ambulance"></i></div>
+                    <div className="text-6xl text-blue-800"><i className="fas fa-ambulance"></i></div>
                     <div className="ml-6">
                         <h2 className="text-2xl font-semibold text-blue-500">Emmergency Care</h2>
                         <p className="text-gray-400">In most places, the EMS can be summoned by members of the public (as well as medical facilities, other emergency services, businesses and authorities) via an emergency telephone number which puts them in contact with a control facility, which will then dispatch a suitable resource for the situation.</p>
                     </div>
                 </div>
                 <div className="lg:flex service-icon">
-                    <div className="text-6xl text-blue-800"><i class="far fa-credit-card"></i></div>
+                    <div className="text-6xl text-blue-800"><i className="far fa-credit-card"></i></div>
                     <div className="ml-6">
                         <h2 className="text-2xl font-semibold text-blue-500">Operation Theater Service</h2>
                         <p className="text-gray-400">Of the Eighteen operation theatres thirteen have the stainless steel system with latest laminar flow an exhaust system. Day care surgeries are managed in the ground floor O.T. There are four minor operation theaters – two in the surgical outpatient department block one in the labor room and one in casualty to cater.</p>
                     </div>
                 </div>
                 <div className="lg:flex service-icon">
-                    <div className="text-6xl text-blue-800"><i class="fas fa-map-marker"></i></div>
+                    <div className="text-6xl text-blue-800"><i className="fas fa-map-marker"></i></div>
                     <div className="ml-6">
                         <h2 className="text-2xl font-semibold text-blue-500">Blood Test</h2>
                         <p className="text-gray-400">A blood test usually involves the phlebotomist taking a blood sample from a blood vessel in your arm. and the usual place for a sample is the inside of the elbow or wrist, where the veins are relatively close to the surface. Blood samples from children are most commonly taken from the back of the hand.</p>
                     </div>
                 </div>
                 <div className="lg:flex service-icon">
-                    <div className="text-6xl text-blue-800"><i class="fas fa-pills"></i></div>
+                    <div className="text-6xl text-blue-800"><i className="fas fa-pills"></i></div>
                     <div className="ml-6">
                         <h2 className="text-2xl font-semibold text-blue-500">24/7 Pharmacy Support</h2>
                         <p className="text-gray-400">We are here to support Australian pharmacists, pharmacy interns and students by providing a team of volunteer pharmacists trained in peer support and telephone counselling ready to take your calls.Not a pharmacist and seeking medicines information? Go to NPS MedicineWise or ask your local pharmacist.</p>
                     </div>
                 </div>
                 <div className="lg:flex service-icon">
-                    <div className="text-6xl text-blue-800"><i class="fas fa-phone-square"></i></div>
+                    <div className="text-6xl text-blue-800"><i className="fas fa-phone-square"></i></div>
                     <div className="ml-6">
                         <h2 className="text-2xl font-semibold text-blue-500">24/7 Telephone Service</h2>
                         <p className="text-gray-400">You always can get online services via telephone from anywhere anytime from us. We always care about out patients.</p>

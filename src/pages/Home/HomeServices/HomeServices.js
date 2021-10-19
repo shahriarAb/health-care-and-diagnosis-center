@@ -13,7 +13,7 @@ const HomeServices = () => {
     return (
         <div className="my-12 grid justify-items-center">
             <h2 className="text-lg font-semibold text-blue-400">Our Mentionable Services</h2>
-            <div className="mt-8 mx-8 grid grid-cols-3 gap-8">
+            <div className="mt-8 mx-8 lg:grid lg:grid-cols-3 gap-8">
                 {
                     services.map(service => <Service
                         key={service.id}
