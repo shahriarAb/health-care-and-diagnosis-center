@@ -12,6 +12,7 @@ const useFirebase = () => {
     const [password, setPassword] = useState('');
     const [rePassword, setRePassword] = useState('');
     const [error, setError] = useState('');
+    const [isLoading, setIsLoading] = useState(true);
 
     const googleProvider = new GoogleAuthProvider();
     const facebookProvider = new FacebookAuthProvider();
@@ -19,26 +20,12 @@ const useFirebase = () => {
     const auth = getAuth();
 
     const signInUsingGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                setUser(user);
-                setError('');
-            })
-            .catch(error => {
-                setError(error.message);
-                setError(error.message);
-            });
+        setIsLoading(true);
+        return signInWithPopup(auth, googleProvider);
     }
 
     const signInUsingFacebook = () => {
-        signInWithPopup(auth, facebookProvider)
-            .then(result => {
-                setUser(user);
-                setError('');
-            })
-            .catch(error => {
-                setError(error.message);
-            });
+        return signInWithPopup(auth, facebookProvider);
     }
 
     const updateDisplayName = () => {
@@ -50,13 +37,7 @@ const useFirebase = () => {
     const registerWithEmailAndPassword = e => {
         e.preventDefault();
         if (password === rePassword) {
-            createUserWithEmailAndPassword(auth, email, password)
-                .then(result => {
-                    updateDisplayName();
-                    setUser(result.user);
-                    window.location.reload();
-                })
-                .catch(error => setError(error.message));
+            return createUserWithEmailAndPassword(auth, email, password);
         }
         else {
             setError('Password does not matched!');
@@ -64,12 +45,7 @@ const useFirebase = () => {
     }
 
     const signInExistingUser = e => {
-        e.preventDefault();
-        signInWithEmailAndPassword(auth, email, password)
-            .then(result => {
-                setError('');
-            })
-            .catch(error => setError(error.message));
+        return signInWithEmailAndPassword(auth, email, password);
     }
 
     useEffect(() => {
@@ -77,16 +53,22 @@ const useFirebase = () => {
             if (user) {
                 setUser(user);
             }
+            else {
+                setUser({});
+            }
+            setIsLoading(false);
         });
         return unsubscribe;
     }, [])
 
     const signingOut = () => {
+        setIsLoading(true);
         signOut(auth)
             .then(() => {
                 setUser({})
             })
-            .catch(error => setError(error.message));
+            .catch(error => setError(error.message))
+            .finally(() => setIsLoading(false));
     }
 
     return {
@@ -94,8 +76,12 @@ const useFirebase = () => {
         error,
         setName,
         setEmail,
+        setError,
         setPassword,
         setRePassword,
+        isLoading,
+        setIsLoading,
+        updateDisplayName,
         signInUsingGoogle,
         signInUsingFacebook,
         registerWithEmailAndPassword,

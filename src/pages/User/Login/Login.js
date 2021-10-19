@@ -1,9 +1,48 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
-    const { setEmail, setPassword, signInExistingUser, error } = useAuth();
+    const { setEmail, setPassword, signInExistingUser, error, setIsLoading, signInUsingGoogle, signInUsingFacebook, setError } = useAuth();
+    const history = useHistory();
+    const location = useLocation();
+    const redirect_uri = location.state?.from || '/home';
+
+    const handleGoogleSignin = () => {
+        signInUsingGoogle()
+            .then(() => {
+                setError('');
+                history.push(redirect_uri);
+            })
+            .catch(error => {
+                setError(error.message);
+                setError(error.message);
+            })
+            .finally(() => setIsLoading(false));
+    }
+
+    const handleFacebookSignin = () => {
+        signInUsingFacebook()
+            .then(() => {
+                setError('');
+                history.push(redirect_uri);
+            })
+            .catch(error => {
+                setError(error.message);
+            })
+            .finally(() => setIsLoading(false));
+    }
+
+    const handleExistingUserLogin = e => {
+        e.preventDefault();
+        signInExistingUser()
+            .then(() => {
+                setError('');
+                history.push(redirect_uri)
+            })
+            .catch(error => setError(error.message))
+            .finally(() => setIsLoading(false));
+    }
 
     const handleEmailAddress = e => {
         setEmail(e.target.value);
@@ -17,7 +56,7 @@ const Login = () => {
             <div className="signup-form">
                 <div className="form-border">
                     <h4 className="text-2xl font-bold mb-2">Login</h4>
-                    <form className="my-4" onSubmit={signInExistingUser}>
+                    <form className="my-4" onSubmit={handleExistingUserLogin}>
                         <input onBlur={handleEmailAddress} className="input-box placeholder-blue-300" type="text" placeholder="Email Address" />
                         <input onBlur={handlePassword} className="input-box placeholder-blue-300" type="password" placeholder="Password" />
                         <div>
@@ -35,9 +74,9 @@ const Login = () => {
                     <h6 className="font-semibold text-lg">or</h6>
                 </div>
                 <div className="text-center">
-                    <button className="border-2 border-yellow-400 hover:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-opacity-50 py-1 px-12 rounded-full py-2 px-6 text-yellow-400 hover:text-yellow-500 font-medium shadow-md"><i className="fab fa-google"></i> Continue with Google</button>
+                    <button onClick={handleGoogleSignin} className="border-2 border-yellow-400 hover:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-opacity-50 py-1 px-12 rounded-full py-2 px-6 text-yellow-400 hover:text-yellow-500 font-medium shadow-md"><i className="fab fa-google"></i> Continue with Google</button>
                     <br />
-                    <button className="border-2 border-indigo-500 hover:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-opacity-50 py-1 px-10 rounded-full py-2 px-6 text-indigo-500 hover:text-indigo-600 font-medium shadow-md my-2"><i className="fab fa-facebook"></i> Continue with Facebook</button>
+                    <button onClick={handleFacebookSignin} className="border-2 border-indigo-500 hover:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-opacity-50 py-1 px-10 rounded-full py-2 px-6 text-indigo-500 hover:text-indigo-600 font-medium shadow-md my-2"><i className="fab fa-facebook"></i> Continue with Facebook</button>
                 </div>
             </div>
         </>

@@ -7,6 +7,7 @@ import Doctors from './pages/Doctors/Doctors';
 import Home from './pages/Home/Home/Home';
 import ServiceDetails from './pages/Home/ServiceDetails/ServiceDetails';
 import NotFound from './pages/NotFound/NotFound';
+import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import Services from './pages/Services/Services';
 import Footer from './pages/Shared/Footer/Footer';
 import Header from './pages/Shared/Header/Header';
@@ -29,16 +30,16 @@ function App() {
             <Route path="/services">
               <Services></Services>
             </Route>
-            <Route path="/servicedetails/:id">
+            <PrivateRoute path="/servicedetails/:id">
               <ServiceDetails></ServiceDetails>
-            </Route>
-            <Route path="/appoinments">
+            </PrivateRoute>
+            <PrivateRoute path="/appoinments">
               <Appoinment></Appoinment>
-            </Route>
+            </PrivateRoute>
             <Route path="/ourdoctors">
               <Doctors></Doctors>
             </Route>
-            <Route>
+            <Route path="/aboutus">
               <Aboutus></Aboutus>
             </Route>
             <Route path="/login">

@@ -16,7 +16,7 @@ const HomeServices = () => {
             <div className="mt-8 mx-8 grid grid-cols-3 gap-8">
                 {
                     services.map(service => <Service
-                        key="id"
+                        key={service.id}
                         service={service}
                     ></Service>)
                 }
