@@ -4,7 +4,7 @@ const Feedback = () => {
     return (
         <div>
             {/* feedback/opinion giving section */}
-            <div className="text-center mt-6 lg:mx- p-6 border-2 bg-gradient-to-r from-blue-300 to-blue-100 border-blue-400 rounded-lg">
+            <div className="text-center mt-6 lg:mx-4 p-6 border-2 bg-gradient-to-r from-blue-300 to-blue-100 border-blue-400 rounded-lg">
                 <p className="text-blue-500 text-lg">Feedback Hub</p>
                 <h2 className="text-3xl font-bold">Give your feedback</h2>
                 <p className="mt-8 text-2xl font-bold text-blue-700">Your opinion matters</p>
