@@ -1,8 +1,13 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Aboutus from './pages/Aboutus/Aboutus';
+import Appoinment from './pages/Appoinment/Appoinment';
 import AuthProvider from './pages/Context/AuthProvider';
+import Doctors from './pages/Doctors/Doctors';
 import Home from './pages/Home/Home/Home';
+import ServiceDetails from './pages/Home/ServiceDetails/ServiceDetails';
 import NotFound from './pages/NotFound/NotFound';
+import Services from './pages/Services/Services';
 import Footer from './pages/Shared/Footer/Footer';
 import Header from './pages/Shared/Header/Header';
 import Login from './pages/User/Login/Login';
@@ -20,6 +25,21 @@ function App() {
             </Route>
             <Route path="/home">
               <Home></Home>
+            </Route>
+            <Route path="/services">
+              <Services></Services>
+            </Route>
+            <Route path="/servicedetails/:id">
+              <ServiceDetails></ServiceDetails>
+            </Route>
+            <Route path="/appoinments">
+              <Appoinment></Appoinment>
+            </Route>
+            <Route path="/ourdoctors">
+              <Doctors></Doctors>
+            </Route>
+            <Route>
+              <Aboutus></Aboutus>
             </Route>
             <Route path="/login">
               <Login></Login>

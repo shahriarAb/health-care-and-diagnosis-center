@@ -39,7 +39,7 @@ const Header = () => {
                             <NavLink className="hover:bg-gray-300 p-2 hover:text-gray-900 rounded-lg" to="/appoinments" activeStyle={activeStyle}>Appoinment</NavLink>
                         </li>
                         <li>
-                            <NavLink className="hover:bg-gray-300 p-2 hover:text-gray-900 rounded-lg" to="/doctors" activeStyle={activeStyle}>Our Doctors</NavLink>
+                            <NavLink className="hover:bg-gray-300 p-2 hover:text-gray-900 rounded-lg" to="/ourdoctors" activeStyle={activeStyle}>Our Doctors</NavLink>
                         </li>
                         <li><NavLink className="hover:bg-gray-300 p-2 hover:text-gray-900 rounded-lg" to="/aboutus" activeStyle={activeStyle}>About Us</NavLink></li>
                         <li>

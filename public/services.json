@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Diagnosis",
+        "img": "https://asianitbd.com/wp/hopemedical/wp-content/uploads/2016/10/pricing-img-2.jpg",
+        "description": "COMPLETE, thorough going physical examination of every patient who presents himself for medical advice would undoubtedly result in fewer diagnostic errors and more effective treatment. Complete examination, however, includes a great many procedures requiring special laboratory equipment available only in large private clinics, co-operative laboratories, and hospitals, while most patients report to their physician at his office. The cost of special examinations done singly is so great in the aggregate as to discourage the patient, and the physician's alternative is to limit his use of laboratory methods to those most likely to yield positive findings in a given case, a practice utterly opposed to the basic idea of complete physical examination."
+    },
+    {
+        "id": 2,
+        "name": "Cardiology",
+        "img": "https://asianitbd.com/wp/hopemedical/wp-content/uploads/2016/10/featured-image-2.jpg",
+        "description": "The Cardiology Department of Health Care & Diagnosis Center has gained reputation for its dynamic and innovation in the diagnosis, investigation and treatment of patients with all forms of heart diseases, both generally encountered and complex cases. We have a dedicated unit of four full-time Consultants, and a team of junior doctors, nurses, and technicians trained to the highest standard in cardiac assessment. Our specialists diagnose and manage full range of heart conditions, and we are fully equipped with state-of-the-art facilities and complete range of services – from cardiac investigations to Interventional Cardiology procedures in ultramodern Catheterization Lab (Cath Lab). Cardio-pulmonary rehabilitation program is offered to patients through our Physical Medicine & Rehabilitation Centre. The hospital offers a multidisciplinary in-patient program, and also has complete Coronary Care Unit and Cardiothoracic ICU for critical cardiac patients. For emergency patients, we have 24-hour Accident & Emergency Centre and specialized team for stabilization and treatment of the patient."
+    },
+    {
+        "id": 3,
+        "name": "Neurology",
+        "img": "https://asianitbd.com/wp/hopemedical/wp-content/uploads/2016/10/featured-image-3.jpg",
+        "description": "Health Care & Diagnosis Center offers the latest in neurological care with innovative therapies, new techniques and clinical trials developed by our world-class experts. Our neurologists help more than 100,000 adults and children each year, including those with complex or rare conditions. Health Care & Diagnosis Center's Department of Neurology is one of the largest and most comprehensive neurological practices in the world. It includes more than 200 experts trained in diagnosing and treating people with epilepsy, aneurysms, spinal bifida, movement disorders, dementias, stroke, brain tumors, multiple sclerosis, headache, neuromuscular diseases, peripheral nerve tumors, paralysis, nerve pain, sleep disorders, speech disorders and many other conditions."
+    },
+    {
+        "id": 4,
+        "name": "Dental",
+        "img": "https://asianitbd.com/wp/hopemedical/wp-content/uploads/2016/10/featured-image-4.jpg",
+        "description": "Dentistry, also known as dental medicine and oral medicine, is a branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity (the mouth), commonly in the dentition (development and arrangement of teeth) as well as the oral mucosa, and of adjacent and related structures and tissues, particularly in associated maxillofacial (jaw and facial) area.[1] The field of dentistry or dental medicine includes teeth as well as other aspects of the craniofacial complex including the temporomandibular joint and other supporting, muscular, lymphatic, nervous, vascular, and anatomical structures. The practitioner is called a dentist."
+    },
+    {
+        "id": 5,
+        "name": "Orthopedic",
+        "img": "https://asianitbd.com/wp/hopemedical/wp-content/uploads/2016/10/featured-image-5.jpg",
+        "description": "Many developments in orthopedic surgery have resulted from experiences during wartime. On the battlefields of the Middle Ages, the injured were treated with bandages soaked in horses' blood, which dried to form a stiff, if unsanitary, splint.[citation needed] Originally, the term orthopedics meant the correcting of musculoskeletal deformities in children. Nicolas Andry, a professor of medicine at the University of Paris, coined the term in the first textbook written on the subject in 1741. He advocated the use of exercise, manipulation, and splinting to treat deformities in children. His book was directed towards parents, and while some topics would be familiar to orthopedists today, it also included 'excessive sweating of the palms' and freckles.[citation needed] Jean-André Venel established the first orthopedic institute in 1780, which was the first hospital dedicated to the treatment of children's skeletal deformities. He developed the club-foot shoe for children born with foot deformities and various methods to treat curvature of the spine."
+    },
+    {
+        "id": 6,
+        "name": "Emergency",
+        "img": "http://asianitbd.com/wp/hopemedical/wp-content/uploads/2016/10/featured-image-6.jpg",
+        "description": "Emergency medical services (EMS), also known as ambulance services or paramedic services, are emergency services that provide urgent pre-hospital treatment and stabilisation for serious illness and injuries and transport to definitive care. They may also be known as a first aid squad, FAST squad, emergency squad, ambulance squad, ambulance corps, life squad or by other initialisms such as EMAS or EMARS. In most places, the EMS can be summoned by members of the public (as well as medical facilities, other emergency services, businesses and authorities) via an emergency telephone number which puts them in contact with a control facility, which will then dispatch a suitable resource for the situation.[8] Ambulances are the primary vehicles for delivering EMS, though some also use cars, motorcycles, aircraft, or boats. EMS agencies may also operate a non-emergency patient transport service, and some have rescue squads to provide technical rescue services."
+    }
+]
