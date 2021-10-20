@@ -8,9 +8,8 @@ const Header = () => {
 
     const activeStyle = {
         fontWeight: "bold",
-        color: "rgb(59,130,246)",
-        textDecoration: "underline",
-        backgronoundColor: "whitesmoke"
+        borderBottom: '2px solid rgb(168, 168, 168)',
+        color: 'rgb(221, 223, 235)'
     }
     return (
         <div className="bg-gradient-to-r from-gray-600 to-gray-900 mb-4 py-2 text-gray-200 flex justify-between">

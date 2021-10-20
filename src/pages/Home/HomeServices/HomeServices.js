@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Service from '../Service/Service';
 
 const HomeServices = () => {
@@ -21,6 +22,7 @@ const HomeServices = () => {
                     ></Service>)
                 }
             </div>
+            <Link className="mt-6 underline text-xl font-semibold text-blue-600" to="/services">More services...</Link>
         </div>
     );
 };

@@ -1,19 +1,21 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import useAuth from '../hooks/useAuth';
 import "./Appoinment.css"
 
 const Appoinment = () => {
+    const { user } = useAuth();
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
     console.log(errors);
     return (
         <div className="container">
             <div className="border-4 border-blue-200 rounded-lg lg:py-16 lg:px-32">
-                <h2 className="text-2xl font-semibold text-blue-400 mb-4">Appoinments</h2>
+                <h2 className="text-2xl font-semibold text-blue-400 mb-4">Set Appoinments</h2>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input type="text" placeholder="First name" {...register("First name", { required: true, maxLength: 80 })} />
                     <input type="text" placeholder="Last name" {...register("Last name", { required: true, maxLength: 100 })} />
-                    <input type="text" placeholder="Email" {...register("Email", { required: true, pattern: /^\S+@\S+$/i })} />
+                    <input type="text" placeholder="Email" {...register("Email", { required: true, pattern: /^\S+@\S+$/i })} value={user.email} />
                     <input type="tel" placeholder="Mobile number" {...register("Mobile number", { required: true, minLength: 7, maxLength: 11 })} />
                     <select {...register("Title", { required: true })}>
                         <option value="Select">Select Doctor</option>

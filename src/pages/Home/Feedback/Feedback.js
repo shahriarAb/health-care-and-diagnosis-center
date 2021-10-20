@@ -4,7 +4,7 @@ const Feedback = () => {
     return (
         <div>
             {/* feedback/opinion giving section */}
-            <div className="text-center mt-6 lg:mx-4 p-6 border-2 bg-gradient-to-r from-blue-300 to-blue-100 border-blue-400 rounded-lg">
+            <div className="text-center mt-6 mx-2 p-6 border-2 bg-gradient-to-r from-blue-300 to-blue-100 border-blue-400 rounded-lg">
                 <p className="text-blue-500 text-lg">Feedback Hub</p>
                 <h2 className="text-3xl font-bold">Give your feedback</h2>
                 <p className="mt-8 text-2xl font-bold text-blue-700">Your opinion matters</p>
@@ -14,7 +14,7 @@ const Feedback = () => {
                     placeholder='Write here and help us to improve our service.' />
                 <br />
                 <button
-                    className="bg-blue-800 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 rounded-full py-2 px-6 text-white font-semibold shadow-md mt-4 mb-12"
+                    className="contact-btn bg-blue-800 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 rounded-full py-2 px-6 text-white font-semibold shadow-md mt-4 mb-12"
                 >Send Mail</button>
             </div>
         </div>
