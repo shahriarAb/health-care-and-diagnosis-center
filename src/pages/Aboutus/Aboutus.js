@@ -5,6 +5,7 @@ import "./Aboutus.css";
 const Aboutus = () => {
     return (
         <div>
+            {/* why you should choose us section */}
             <div className="mx-16">
                 <h2 className="text-lg font-semibold text-gray-700 mt-8"><i>Why Choose us?</i></h2>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">The Reasons That You Should Contact Us</h3>
