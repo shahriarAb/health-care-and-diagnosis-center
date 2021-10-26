@@ -39,6 +39,7 @@ const Aboutus = () => {
                 </div>
             </div>
 
+            {/* about our services section */}
             <h2 className="text-center text-lg font-semibold text-blue-300 mt-16">WE CARE ABOUT PATIENT</h2>
             <h3 className="text-center text-2xl font-semibold text-blue-600 mb-8">OUR OUTSTANDING SERVICES</h3>
             <div className="grid lg:grid-cols-3 gap-8 mx-8">
